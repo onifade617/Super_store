@@ -10,9 +10,6 @@ import store_home, store_dataOverview, store_Univariate, store_Bivariate, store_
 import streamlit as st
 
 
-# Set the maximum number of columns to a large value
-pd.options.display.max_info_columns = 50
-#read dataset
 
 
 
@@ -55,6 +52,9 @@ if st.sidebar.button('Bivariate Statistics'):
     st.session_state.page = 'store_Bivariate'
 if st.sidebar.button('Machine Learning Models'):
     st.session_state.page = 'store_ml'
+if st.sidebar.button('Data Overview'):
+    st.session_state.page = 'store_dataOverview'
+    
 
 # Display the selected page
 if 'page' not in st.session_state:
