@@ -5,7 +5,7 @@ Created on Fri Aug  9 09:25:27 2024
 @author: SAIL
 """
 
-from Super_store.store_main import my_data
+from store_main import my_data
 import streamlit as st
 
 st.title("Data Overview")
