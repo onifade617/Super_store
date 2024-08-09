@@ -13,3 +13,4 @@ df = pd.read_csv("SuperStoreUS-2015.csv")
 def main():
     st.title("Data Overview")
     
+    st.write(df)
