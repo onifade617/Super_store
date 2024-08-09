@@ -16,9 +16,7 @@ import streamlit as st
 
 
 
-def my_data():
-    df = pd.read_excel("C:/Users/SAIL/Super_store/SuperStoreUS-2015.xlsx")
-    return df
+
 
 
 st.sidebar.markdown("""
@@ -67,3 +65,5 @@ elif st.session_state.get('page') == 'store_Bivariate':
     store_Bivariate.main()
 elif st.session_state.get('page') == 'store_ml':
     store_ml.main()
+elif st.session_state.get('page') == 'store_dataOverview':
+    store_dataOverview.main()
