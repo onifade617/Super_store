@@ -8,9 +8,11 @@ Created on Fri Aug  9 09:25:27 2024
 from store_main import my_data
 import streamlit as st
 
-st.title("Data Overview")
+
+def main():
+    st.title("Data Overview")
 
 
-#import data frame
-df = my_data()
-st.write(df)
+    #import data frame
+    df = my_data()
+    st.write(df)
